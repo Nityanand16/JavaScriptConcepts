@@ -26,12 +26,12 @@ console.log(x); //3
 let x1 = 2;
 let x2 = x1++;
 console.log(x1);    //3
-console.log(x2);    //2
+console.log(x2);    //2 first x1 value is assigned to x2 than it was increased
 
 let a1 = 2;
 let a2 = ++a1;
 console.log(a1);    //3
-console.log(a2);    //3
+console.log(a2);    //3 first value of a1 is incrased then it assigned to a2
 
 let c = 2;
 
