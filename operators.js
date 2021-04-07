@@ -24,12 +24,12 @@ console.log(x++);   //2, first it x was called and then added
 console.log(x); //3
 
 let x1 = 2;
-let x2 = x1++;
+let x2 = x1++;      //post increament
 console.log(x1);    //3
 console.log(x2);    //2 first x1 value is assigned to x2 than it was increased
 
 let a1 = 2;
-let a2 = ++a1;
+let a2 = ++a1;      //pre increament
 console.log(a1);    //3
 console.log(a2);    //3 first value of a1 is incrased then it assigned to a2
 
@@ -40,12 +40,12 @@ console.log(c); //3
 
 let m = 2;
 
-console.log(m--);   //2
+console.log(m--);   //2 post decrement
 console.log(m); //1
 
 let p = 2;
 
-console.log(--p);   //1
+console.log(--p);   //1 pre decrement
 console.log(p); //1
 
 console.log('--------------------------------------------------');
@@ -66,9 +66,15 @@ console.log(g); //20
 g*= 10;
 console.log(g);
 
+// x=x+y    or  x+=y
+// x=x-y    or  x-=y
+// x=x*y    or  x*=y
+// x=x/y    or  x/=y
+// x=x%y    or  x%=y
+
 console.log('--------------------------------------------------');
 
-//Comparision operators
+//Comparision/Relational operators-always returns a boolean value
 
 let k = 10;
 
