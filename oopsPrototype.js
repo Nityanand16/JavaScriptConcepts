@@ -72,13 +72,17 @@ class Person {
     }
   }
   Person.prototype.salary = 50000;
-  Person.prototype.display = function Car() {
+  Person.prototype.setdisplay = function Car(brand,color) {
     this.brand=brand;
     this.color=color;
   };
-  person1Obj = new Person("Nitya", 34);
+  Person.prototype.display = function Car() {
+    console.log(this.brand,this.color)
+  };
+
+  person1Obj = new Person("Nitya", 34, "BMW", "Black");
   console.log(person1Obj.name, person1Obj.age, person1Obj.salary);
-  console.log(person1Obj.display("BMW", "Black"));
+  person1Obj.display();
   
   person2Obj = new Person("Nand", 36);
   console.log(person2Obj.name, person2Obj.age, person2Obj.salary);
