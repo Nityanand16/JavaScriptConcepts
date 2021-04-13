@@ -62,32 +62,60 @@
 // person2Obj = new Person("Nand", 36);
 // person2Obj.display();
 
+// //-----------------------------------------------------------------------------
+// //Example 5 add a new function to the class through prototype
+
+// class Person {
+//   constructor(name, age) {
+//     this.name = name;
+//     this.age = age;
+//   }
+// }
+// Person.prototype.salary = 50000;
+// Person.prototype.setdisplay = function car(brand, color) {
+//   this.brand=brand;
+//   this.color=color;
+// };
+// Person.prototype.display = function car(){
+//   console.log(this.brand, this.color)
+// }
+
+// person1Obj = new Person("Nitya", 34);
+// console.log(person1Obj.name, person1Obj.age, person1Obj.salary);
+// person1Obj.setdisplay("BMW", "Black");
+// person1Obj.display();
+
+// person2Obj = new Person("Nand", 36);
+// console.log(person2Obj.name, person2Obj.age, person2Obj.salary);
+// person2Obj.setdisplay("Mercedies", "Blue");
+// person2Obj.display();
+
 //-----------------------------------------------------------------------------
-//Example 5 add a new function to the class through prototype
+//Example 6 add a new function to the class through prototype
 
 class Person {
-    constructor(name, age) {
-      this.name = name;
-      this.age = age;
-    }
+  constructor(name, age) {
+    this.name = name;
+    this.age = age;
   }
-  Person.prototype.salary = 50000;
-  Person.prototype.setdisplay = function Car(brand,color) {
-    this.brand=brand;
-    this.color=color;
-  };
-  Person.prototype.display = function Car() {
-    console.log(this.brand,this.color)
-  };
+}
+Person.prototype.salary = 50000;
+Person.prototype.setdisplay = function car(brand, color) {
+  Person.prototype.display = function car(){
+    console.log(`Brand: ${brand}, Color: ${color}`)
+  }
+};
 
-  person1Obj = new Person("Nitya", 34, "BMW", "Black");
-  console.log(person1Obj.name, person1Obj.age, person1Obj.salary);
-  person1Obj.display();
-  
-  person2Obj = new Person("Nand", 36);
-  console.log(person2Obj.name, person2Obj.age, person2Obj.salary);
-  console.log(person2Obj.display("Mercedies", "Blue"));
-  
+person1Obj = new Person("Nitya", 34);
+console.log(person1Obj.name, person1Obj.age, person1Obj.salary);
+person1Obj.setdisplay("BMW", "Black");
+person1Obj.display();
+
+person2Obj = new Person("Nand", 36);
+console.log(person2Obj.name, person2Obj.age, person2Obj.salary);
+person2Obj.setdisplay("Mercedies", "Blue");
+person2Obj.display();
+
 //-----------------------------------------------------------------------------
 // //Example 1 without prototype
 // function Car(brand, color) {
