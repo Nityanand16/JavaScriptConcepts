@@ -14,3 +14,4 @@ console.log(cars);
 //we can have different types of variables in the same array
 let student=["Nitya", 34, 5.5, true]    //string, integer, float, boolean
 console.log(student);
+
